@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #444444;
 }
 
 html, body {
@@ -18,7 +19,6 @@ html, body {
 
 .title {
     font-size: 36px;
-    color: #444444;
     font-weight: 600;
 }
 
@@ -26,6 +26,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 24px;
 }
 
 
@@ -42,15 +43,34 @@ html, body {
     width: 386px;
     height: 386px;
     background-color: #f5f5f5;
-    border: solid 1px #444444;
+    border: solid 1px;
 }
 
 .new-box {
     flex: 1 0 auto;
-    border: solid 1px #444444;
+    border: solid 1px;
 }
 
 .new-box:hover {
     transition: 0.2s;
     background-color: #b3c8ca;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 178px;
+    gap: 8px;
+    padding: 24px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
 }
